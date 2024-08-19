@@ -10,3 +10,13 @@ for (let i = 0; i < 16; i++) {
     }
     grid.appendChild(rowDiv);
 }
+const changeCellColor = function (cell) {
+    cell.style.backgroundColor = 'blue';
+};
+
+const cells = document.querySelectorAll('.col');
+cells.forEach((cell) => {
+    cell.addEventListener('mouseenter', () => {
+        cell.style.backgroundColor = 'blue';
+    })
+});
