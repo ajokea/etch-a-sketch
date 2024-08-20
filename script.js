@@ -21,7 +21,14 @@ const createGrid = function(n) {
     const cells = document.querySelectorAll('.col');
     cells.forEach((cell) => {
         cell.addEventListener('mouseenter', () => {
-            cell.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`;
+            if (!cell.style.backgroundColor) {
+                cell.style.opacity = '0.1';
+                cell.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`;
+            } else {
+                if (cell.style.opacity < 1) {
+                    cell.style.opacity = `${+cell.style.opacity + 0.1}`;
+                }
+            }
         })
     });
 }
