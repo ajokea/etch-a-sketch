@@ -3,6 +3,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
+    border: 0.5px solid black;
 
 }
 
@@ -12,7 +13,6 @@
 }
 
 .col {
-    border: 0.5px solid black;
     flex: 1 1 auto;
 }
 
