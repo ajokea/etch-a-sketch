@@ -21,7 +21,7 @@ const createGrid = function(n) {
     const cells = document.querySelectorAll('.col');
     cells.forEach((cell) => {
         cell.addEventListener('mouseenter', () => {
-            cell.style.backgroundColor = 'blue';
+            cell.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`;
         })
     });
 }
