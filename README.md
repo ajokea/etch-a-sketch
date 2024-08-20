@@ -1,1 +1,1 @@
-# etch-a-sketch
+In this project, I used my knowledge of JavaScript and DOM manipulation to roughly create a browser version of "Etch-A-Sketch".
