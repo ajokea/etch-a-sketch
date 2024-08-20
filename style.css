@@ -1,5 +1,5 @@
 .grid {
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -14,4 +14,11 @@
 .col {
     border: 0.5px solid black;
     flex: 1 1 auto;
+}
+
+.dimensionSelector {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
